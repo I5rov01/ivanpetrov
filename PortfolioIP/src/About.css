@@ -1,0 +1,34 @@
+/* src/components/AboutMe.css */
+.about-section {
+    display: flex;
+    padding: 50px;
+    background-color: #0a0a23;
+    color: #fff;
+  }
+  
+  .about-image {
+    flex: 1;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+  }
+  
+  .about-content h2 span {
+    color: #e67e22;
+  }
+  
+  .about-content p {
+    margin: 20px 0;
+  }
+  
