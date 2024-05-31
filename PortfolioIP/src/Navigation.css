@@ -1,4 +1,3 @@
-/* src/components/Navigation.css */
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -8,6 +7,20 @@
   background-color: #020617;
   color: #fff;
   font-family: 'Lemon', sans-serif; /* Apply Lemon font */
+  position: fixed; /* Fix the navigation bar at the top */
+  width: 100%; /* Make it span the entire width */
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.navigation.visible {
+  transform: translateY(0);
+}
+
+.navigation.hidden {
+  transform: translateY(-100%);
 }
 
 .navigation .logo {
@@ -27,4 +40,9 @@
 .navigation ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+/* Add this */
+.navigation ul li a.active {
+  border-bottom: 2px solid #fff; /* You can customize the underline style */
 }
