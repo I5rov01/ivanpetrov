@@ -46,11 +46,14 @@
 }
 
 .contact-button {
+  font-family: 'Lemon', sans-serif; /* Apply Lemon font */
   padding: 10px 20px;
   background-color: #e67e22;
   border: none;
-  color: #fff;
+  color: #111827;
   cursor: pointer;
+  border-radius: 8px;
+
 }
 
 .home-image {

@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <section id="home" className="home-section">
       <div className="home-content">
-        <h2 className="animated-text">Hello, Welcome</h2>
+        <h2 className="animated-text">Hey, Welcome</h2>
         <h1 className="animated-text">I am <span>Ivan Petrov</span></h1>
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <p>I am a Media Design student at Fontys. </p>
         <button className="contact-button">Contact</button>
       </div>
       <div className="home-image">
