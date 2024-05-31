@@ -1,48 +1,64 @@
 /* src/components/Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap'); /* Import Lemon font */
+
 .home-section {
-    display: flex;
-    padding: 50px;
-    background-color: #0a0a23;
-    color: #fff;
-  }
-  
-  .home-content {
-    flex: 1;
-    padding-right: 20px;
-  }
-  
-  .home-content h2 {
-    font-size: 1.2rem;
-    color: #f39c12;
-  }
-  
-  .home-content h1 {
-    font-size: 2.5rem;
-    margin-top: 0;
-  }
-  
-  .home-content h1 span {
-    color: #e67e22;
-  }
-  
-  .home-content p {
-    margin: 20px 0;
-  }
-  
-  .contact-button {
-    padding: 10px 20px;
-    background-color: #e67e22;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .home-image {
-    flex: 1;
-  }
-  
-  .home-image img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 165px;
+  padding-right: 165px;
+  background-color: #111827;
+  color: #fff;
+  font-family: 'Lemon', sans-serif; /* Apply Lemon font */
+}
+
+.home-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.animated-text {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.home-content h2 {
+  font-size: 1.2rem;
+  color: #e67e22;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.home-content h1 span {
+  color: #e67e22;
+}
+
+.home-content p {
+  margin: 20px 0;
+  color: #6B7280;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background-color: #e67e22;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 400px; 
+  border-radius: 8px;
+
+}
+
