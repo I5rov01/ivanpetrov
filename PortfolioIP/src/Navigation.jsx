@@ -16,20 +16,24 @@ const Navigation = () => {
         const viewportHeight = window.innerHeight;
         const navbarHeight = 50; // Adjust as needed
 
-        if (scrollPosition >= sectionTop - navbarHeight && scrollPosition < sectionTop + sectionHeight - viewportHeight / 2) {
+        if (
+          scrollPosition >= sectionTop - navbarHeight &&
+          scrollPosition < sectionTop + sectionHeight - viewportHeight / 2
+        ) {
           setActiveSection(section.id);
         }
       });
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Trigger on mount to check visibility initially
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const handleClick = (id) => {
+  const handleClick = id => {
     const section = document.getElementById(id);
     const sectionTop = section.offsetTop;
     const sectionHeight = section.offsetHeight;
@@ -39,20 +43,68 @@ const Navigation = () => {
 
     window.scrollTo({
       top: scrollTo,
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   };
 
   return (
-    <nav className="navigation">
+    <nav className={`navigation ${activeSection === 'service' ? 'service-active' : ''}`}>
       <img className="logo" src={Logo} alt="Logo" />
       <ul>
-        <li><a href="#home" onClick={() => handleClick('home')} className={activeSection === 'home' ? 'active' : ''}>Home</a></li>
-        <li><a href="#about" onClick={() => handleClick('about')} className={activeSection === 'about' ? 'active' : ''}>About</a></li>
-        <li><a href="#service" onClick={() => handleClick('service')} className={activeSection === 'service' ? 'active' : ''}>Service</a></li>
-        <li><a href="#projects" onClick={() => handleClick('projects')} className={activeSection === 'projects' ? 'active' : ''}>Projects</a></li>
-        <li><a href="#experience" onClick={() => handleClick('experience')} className={activeSection === 'experience' ? 'active' : ''}>Experience</a></li>
-        <li><a href="#contacts" onClick={() => handleClick('contacts')} className={activeSection === 'contacts' ? 'active' : ''}>Contacts</a></li>
+        <li>
+          <a
+            href="#home"
+            onClick={() => handleClick('home')}
+            className={activeSection === 'home' ? 'active' : ''}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#about"
+            onClick={() => handleClick('about')}
+            className={activeSection === 'about' ? 'active' : ''}
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="#service"
+            onClick={() => handleClick('service')}
+            className={activeSection === 'service' ? 'active' : ''}
+          >
+            Service
+          </a>
+        </li>
+        <li>
+          <a
+            href="#projects"
+            onClick={() => handleClick('projects')}
+            className={activeSection === 'projects' ? 'active' : ''}
+          >
+            Projects
+          </a>
+        </li>
+        <li>
+          <a
+            href="#experience"
+            onClick={() => handleClick('experience')}
+            className={activeSection === 'experience' ? 'active' : ''}
+          >
+            Experience
+          </a>
+        </li>
+        <li>
+          <a
+            href="#contacts"
+            onClick={() => handleClick('contacts')}
+            className={activeSection === 'contacts' ? 'active' : ''}
+          >
+            Contacts
+          </a>
+        </li>
       </ul>
     </nav>
   );

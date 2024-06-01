@@ -7,7 +7,7 @@ const Contacts = () => {
   const emailUrl = 'mailto:ivan.5rov01@gmail.com';
 
   return (
-    <div className="contacts">
+    <div id="contacts" className="contacts">
       <h2>Contact Me</h2>
       <div className="contact-list">
         <a href={linkedinMessageUrl} target="_blank" rel="noopener noreferrer" className="contact-card">

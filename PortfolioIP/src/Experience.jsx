@@ -3,7 +3,7 @@ import './Experience.css';
 
 const Experiences = () => {
   return (
-    <div className="services">
+    <div  id="experience" className="services">
       <div className="service-section">
         <h1>My <span>Experiences</span></h1>
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>

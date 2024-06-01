@@ -1,4 +1,3 @@
-// src/components/AboutMe.jsx
 import React from 'react';
 import './About.css';
 import AboutImg from './assets/AboutImg.png';
