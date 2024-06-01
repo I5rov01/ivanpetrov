@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 
-const Projects = ({ title, description, image, details }) => {
+const Projects = ({ title, description, image, details, onClick }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -9,7 +9,7 @@ const Projects = ({ title, description, image, details }) => {
   };
 
   return (
-    <div className="service-card" onClick={toggleExpand}>
+    <div className="project-card" onClick={() => onClick({ title, description, details })}>
       <div className="project-header">
         <img src={image} alt={title} className="project-image" />
         <div className="project-info">
