@@ -1,0 +1,31 @@
+.project-details-container {
+    padding: 30px;
+    background-color: #111827;
+    color: #fff;
+    font-family: 'Lemon', sans-serif;
+  }
+  
+  .project-details {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .project-details h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff9800;
+  }
+  
+  .project-details img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .project-details p {
+    font-size: 1.2em;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  

@@ -1,5 +1,3 @@
-// src/components/Projects.js
-
 import React, { useState } from 'react';
 import './Projects.css';
 
@@ -11,11 +9,11 @@ const Projects = ({ title, description, image, details }) => {
   };
 
   return (
-    <div id="projects"className="project" onClick={toggleExpand}>
+    <div className="service-card" onClick={toggleExpand}>
       <div className="project-header">
         <img src={image} alt={title} className="project-image" />
         <div className="project-info">
-          <h3>{title}</h3>
+          <h2>{title}</h2>
           <p>{description}</p>
         </div>
       </div>

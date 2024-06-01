@@ -1,6 +1,4 @@
-// src/components/ProjectList.js
-
-import React from 'react';
+import React, { useState } from 'react';
 import Projects from './Projects';
 import './ProjectList.css';
 import MaxSpeedAuto from './assets/MaxSpeedAuto.png';
@@ -23,17 +21,42 @@ const projects = [
 ];
 
 const ProjectList = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleClosePopup = () => {
+    setSelectedProject(null);
+  };
+
   return (
-    <div className="project-list">
-      {projects.map((project, index) => (
-        <Projects
-          key={index}
-          title={project.title}
-          description={project.description}
-          image={project.image}
-          details={project.details}
-        />
-      ))}
+    <div id="projects" className="services">
+      <div className="service-section">
+        <h1>My <span>Projects</span></h1>
+        <p>Here are some of the projects I have worked on recently.</p>
+      </div>
+      <div className="service-cards">
+        {projects.map((project, index) => (
+          <div className="service-card" key={index} onClick={() => handleProjectClick(project)}>
+            <img className="project-image" src={project.image} alt={project.title} />
+            <div className="project-info">
+              <h2>{project.title}</h2>
+              <p>{project.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      {selectedProject && (
+        <div className="popup">
+          <div className="popup-content">
+            <span className="close" onClick={handleClosePopup}>&times;</span>
+            <h2>{selectedProject.title}</h2>
+            <p>{selectedProject.details}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
