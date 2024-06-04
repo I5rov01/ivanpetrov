@@ -25,6 +25,8 @@
   .service-section p {
     color: #999;
     font-size: 1.2em;
+    font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
   }
   
   .service-cards {
@@ -43,14 +45,14 @@
   }
   
   .service-card .date {
-    color: #999;
+    color: #ff9800;
     font-size: 1em;
   }
   
   .service-card .title {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #ff9800;
+    color: #fff;
   }
   
   .service-card .company {

@@ -11,11 +11,9 @@ const AboutMe = () => {
       <div className="about-content">
         <h2 className="animated-text">About <span>Me</span></h2>
         <p className="animated-text">
-          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
-        </p>
+        I am from Kazanlak, Bulgaria. My hometown is situated at the central part of the country. It is also known as the Rose Valley of Bulgaria. It has unique and beautiful nature and is a town full of history.        </p>
         <p className="animated-text">
-          Passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
-        </p>
+        Currently, I am 3rd year ICT & Media Design student. After my UX/UI internship I decided to continue with Advanced Media Design, and in the same time I have a Freelance job as a SEO and webiste and content creator.        </p>
       </div>
     </section>
   );
