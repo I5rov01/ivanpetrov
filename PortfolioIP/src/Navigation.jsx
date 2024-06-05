@@ -5,6 +5,8 @@ import Logo from './assets/Logo.png';
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('');
 
+  console.log(activeSection)
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
@@ -54,7 +56,7 @@ const Navigation = () => {
         <li>
           <a
             href="#home"
-            onClick={() => handleClick('home')}
+            onClick={() => setActiveSection('home')}
             className={activeSection === 'home' ? 'active' : ''}
           >
             Home
@@ -63,7 +65,7 @@ const Navigation = () => {
         <li>
           <a
             href="#about"
-            onClick={() => handleClick('about')}
+            onClick={() => setActiveSection('about')}
             className={activeSection === 'about' ? 'active' : ''}
           >
             About
@@ -72,7 +74,7 @@ const Navigation = () => {
         <li>
           <a
             href="#service"
-            onClick={() => handleClick('service')}
+            onClick={() => setActiveSection('service')}
             className={activeSection === 'service' ? 'active' : ''}
           >
             Service
@@ -81,7 +83,7 @@ const Navigation = () => {
         <li>
           <a
             href="#projects"
-            onClick={() => handleClick('projects')}
+            onClick={() => setActiveSection('projects')}
             className={activeSection === 'projects' ? 'active' : ''}
           >
             Projects
@@ -90,7 +92,7 @@ const Navigation = () => {
         <li>
           <a
             href="#experience"
-            onClick={() => handleClick('experience')}
+            onClick={() => setActiveSection('experience')}
             className={activeSection === 'experience' ? 'active' : ''}
           >
             Experience
@@ -99,7 +101,7 @@ const Navigation = () => {
         <li>
           <a
             href="#contacts"
-            onClick={() => handleClick('contacts')}
+            onClick={() => setActiveSection('contacts')}
             className={activeSection === 'contacts' ? 'active' : ''}
           >
             Contacts
