@@ -10,12 +10,12 @@
 .contacts h2 {
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #ff9800; /* Orange color for the "Contact" text */
+  color: #fff; /* Orange color for the "Contact" text */
   font-family: 'Lemon', sans-serif; /* Apply Lemon font */
 }
 
 .contacts h2 span {
-  color: #fff; /* White color for the "Me" text */
+  color: #ff9800; /* White color for the "Me" text */
 }
 
 .contact-list {

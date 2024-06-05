@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <section id="home" className="home-section">
       <div className="home-content">
-        <h2 className="animated-text">Hey, Welcome</h2>
+        <h2 className="animated-text"><span>Hey,</span> Welcome</h2>
         <h1 className="animated-text">I am <span>Ivan Petrov</span></h1>
         <p className="animated-text">I am a Media Design student at Fontys. Currently I am in semester 6, and I will be doing a minor next year.</p>
         <button className="contact-button animated-text" onClick={handleContactClick}>Contact</button>
