@@ -1,6 +1,6 @@
 **S6 Portfolio**
 
-In this repository you will find fully coded version of my portfolio, which i will be using in order to apply for internship.
+In this repository you will find fully coded version of my portfolio, which i will be using in order to apply for internship. The portfolio is made with Vite + React + JS. Each section has its own folder because i wanted to split the sections into components.
 
 **Intro**
 
@@ -10,7 +10,7 @@ This portfolio represents experiences, projects, and services I have, the idea i
 
 example:
 1. cd PortfolioIP 
-2. npm install - In the terminal 
+2. npm install 
 3. npm run dev
 
 Then you have to click on the link from the terminal.
