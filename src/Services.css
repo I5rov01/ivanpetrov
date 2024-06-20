@@ -6,6 +6,7 @@
     background-color: #111827;
     color: #fff;
     font-family: 'Lemon', sans-serif; /* Apply Lemon font */
+    min-height: 80vh;
   }
   
   .service-section {

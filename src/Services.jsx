@@ -5,7 +5,8 @@ import { faBullhorn, faLaptopCode, faPaintBrush } from '@fortawesome/free-solid-
 
 const Services = () => {
   return (
-    <div id="service" className="services">
+    <section id="service">
+    <div className="services">
       <div className="service-section">
         <h1>My <span>Service</span></h1>
       </div>
@@ -27,6 +28,7 @@ const Services = () => {
         />
       </div>
     </div>
+    </section>
   );
 }
 

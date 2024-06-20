@@ -117,7 +117,8 @@ const ProjectList = () => {
   };
 
   return (
-    <div id="projects" className="projects"> {/* Changed class name from 'services' to 'projects' */}
+    <section id="projects">
+    <div  className="projects"> {/* Changed class name from 'services' to 'projects' */}
       <div className="service-section">
         <h1>My <span>Projects</span></h1>
         <p>Here are some of the projects I have worked on recently.</p>
@@ -145,6 +146,7 @@ const ProjectList = () => {
         </div>
       )}
     </div>
+    </section>
   );
 };
 

@@ -16,7 +16,7 @@ const Navigation = () => {
         const sectionHeight = section.offsetHeight;
         const scrollPosition = window.scrollY;
         const viewportHeight = window.innerHeight;
-        const navbarHeight = 50; // Adjust as needed
+        const navbarHeight = 20; // Adjust as needed
 
         if (
           scrollPosition >= sectionTop - navbarHeight &&
@@ -35,19 +35,7 @@ const Navigation = () => {
     };
   }, []);
 
-  const handleClick = id => {
-    const section = document.getElementById(id);
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
-    const viewportHeight = window.innerHeight;
-    const navbarHeight = 50; // Adjust as needed
-    const scrollTo = sectionTop - (viewportHeight - sectionHeight) / 2 - navbarHeight;
-
-    window.scrollTo({
-      top: scrollTo,
-      behavior: 'smooth',
-    });
-  };
+  
 
   return (
     <nav className={`navigation ${activeSection === 'service' ? 'service-active' : ''}`}>
