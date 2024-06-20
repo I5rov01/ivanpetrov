@@ -3,8 +3,9 @@ import Projects from './Projects';
 import './ProjectList.css';
 import MaxSpeedAuto from './assets/MaxSpeedAuto.png';
 import RebornSkinStore from './assets/RebornSkinStore.png';
-import UniversityProjectImage from './assets/RebornSkinStore.png';
-import NewProjectImage from './assets/MaxSpeedAuto.png'; // Import the new project image
+import tier from './assets/Winter-tier.png'; // Import the new project image
+import Dashboard from './assets/Dashboard.png'; 
+
 import Slider from 'react-slick'; // Import React Slick
 import 'slick-carousel/slick/slick.css'; // Import slick carousel styles
 import 'slick-carousel/slick/slick-theme.css'; // Import slick carousel theme styles
@@ -25,34 +26,20 @@ const projects = [
     category: 'personal'
   },
   {
-    title: 'University Project',
+    title: 'Referral Program',
     description: 'A project developed during university studies',
-    image: UniversityProjectImage,
+    image: tier,
     details: 'More information about the University Project...',
     category: 'university'
   },
-  // Add more projects here
   {
-    title: 'New Project',
-    description: 'A new project example',
-    image: NewProjectImage,
+    title: 'Dashboard',
+    description: 'Managing users data',
+    image: Dashboard,
     details: 'More information about the New Project...',
     category: 'university'
   },
-  {
-    title: 'New Projedsct',
-    description: 'A new project ex11ample',
-    image: NewProjectImage,
-    details: 'More information about the New Project...',
-    category: 'university'
-  },
-  {
-    title: 'New Project111',
-    description: 'A new project exampldsae',
-    image: NewProjectImage,
-    details: 'More information about the New Project...',
-    category: 'university'
-  },
+  
 ];
 
 const ProjectList = () => {
@@ -118,7 +105,7 @@ const ProjectList = () => {
 
   return (
     <section id="projects">
-    <div  className="projects"> {/* Changed class name from 'services' to 'projects' */}
+    <div id="projects" className="projects"> {/* Changed class name from 'services' to 'projects' */}
       <div className="service-section">
         <h1>My <span>Projects</span></h1>
         <p>Here are some of the projects I have worked on recently.</p>
