@@ -5,8 +5,8 @@ import { faBullhorn, faLaptopCode, faPaintBrush } from '@fortawesome/free-solid-
 
 const Services = () => {
   return (
-    <section id="service">
-    <div className="services">
+    <section id="services">
+    <div id="service" className="services">
       <div className="service-section">
         <h1>My <span>Service</span></h1>
       </div>
@@ -14,17 +14,17 @@ const Services = () => {
         <ServiceCard 
           icon={faBullhorn} 
           title="Digital Marketing" 
-          description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
+          description="Google ADS, Instagram, Tik Tok"
         />
         <ServiceCard 
           icon={faLaptopCode} 
           title="Web Development" 
-          description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
+          description="Shopify, HTML, CSS, JS, React, Vite, Tailwind CSS"
         />
         <ServiceCard 
           icon={faPaintBrush} 
-          title="Graphic Design" 
-          description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
+          title="Design" 
+          description="Figma, Adobe XD, CMD method pack, SCRUM, Double Diamond"
         />
       </div>
     </div>
